@@ -149,6 +149,10 @@ EMAIL_HOST_USER = 'luka.cadez.fsb@gmail.com'
 EMAIL_HOST_PASSWORD = 'pkixirrbicfsajay'
 EMAIL_USE_TLS = True
 
+try:
+    from .local_settings import *
+except ImportError:
+    pass
 
 
 
