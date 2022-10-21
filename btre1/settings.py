@@ -143,11 +143,6 @@ MESSAGE_TAGS = {
 }
 
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
-
 
 
 # Default primary key field type
@@ -155,3 +150,8 @@ except ImportError:
 # ovo je dodano u odnosu na Jackov video...valjda jer koristim linux kao op
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
